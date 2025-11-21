@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Level1 : Task2</title>
+</head>
+<body>
+<h1>Button color change</h1>
+<button id="colorBtn">Click Me</button>
+
+<!--css-->
+<style>
+  #colorBtn {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    background-color:violet;
+    color: white;
+    cursor: pointer;
+}
+body{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(to right,white,pink,orange,red);
+}
+button{
+  height: 250px;
+  width: 250px;
+  border-radius: 50px;
+}
+</style>
+<!--java script-->
+<script>
+  document.getElementById("colorBtn").onclick = function() {
+    this.style.backgroundColor = 
+        this.style.backgroundColor === "violet" ? "green" : "violet";
+};
+</script>
+</body>
+</html>
