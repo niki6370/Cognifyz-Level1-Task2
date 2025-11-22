@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level1:Task2 :Greeting Alert</title>
+</head>
+<body>
+
+    <h1><i>Greeting Message</i></h1>
+    <button onclick="createGreeting()">Click for Greeting</button>
+<!--css-->
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to right,white,pink ,orange,red);
+    margin-top: 100px;
+    text-align: center;
+}
+
+button {
+    padding: 22px 22px;
+    font-size: 19px;
+    cursor: pointer;
+    background:violet;
+    color: white;
+    border-radius: 50px;
+}
+
+</style>
+
+<!--js-->
+<script>
+function createGreeting() {
+    let now = new Date();
+    let hour = now.getHours();
+    let greeting = "";
+
+    if (hour < 12) {
+        greeting = "Good Morning!";
+    } else if (hour < 18) {
+        greeting = "Good Afternoon!";
+    } else {
+        greeting = "Good Evening!";
+    }
+
+    alert(greeting);
+}
+</script>
+</body>
+</html>
